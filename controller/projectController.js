@@ -46,6 +46,7 @@ exports.AddProject = async (req, res) => {
             heart_likes: req.body.heart_likes,
             githab_links: req.body.githab_links,
             gitlab_count: req.body.gitlab_count,
+            img: req.body.img,
         })
         res.status(201).json({
             status: "success",
@@ -92,7 +93,8 @@ exports.updateProject = async (req, res) => {
                 heart_likes_count: req.body.heart_likes_count,
                 githab_links: req.body.githab_links,
                 gitlab_count: gitcount,
-                preview_count_flag: req.body.preview_count_flag
+                preview_count_flag: req.body.preview_count_flag,
+                img: req.body.img,
             }
         }, { new: true })
         res.status(200).json({

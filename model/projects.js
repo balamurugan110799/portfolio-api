@@ -42,6 +42,10 @@ const project = new mongoose.Schema({
         require: true,
         default:0
     },
+    img:{
+        type: String,
+        require: true,
+    }
 })
 
 module.exports = mongoose.model("project", project)
