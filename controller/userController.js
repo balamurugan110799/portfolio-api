@@ -38,7 +38,7 @@ exports.LoginController = async (req,res)=>{
         if(!userPassword){
             return res.status(500).json({
                 status: "failed",
-                message_email: "Password Not Matched"
+                message_password: "Password Not Matched"
             })
         }
 
